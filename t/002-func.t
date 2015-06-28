@@ -34,6 +34,7 @@ my $p2 = $p.then({
             ok(check-socket($port), "check-socket - port $port default localhost");
             ok(check-socket($port, 'localhost'), "check-socket - port $port");
             ok(check-socket($port, '127.0.0.1'), "check-socket - port $port numeric IP");
+            exit 0;
             True;
 });
 
