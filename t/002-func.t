@@ -2,6 +2,8 @@ use v6;
 use lib 'lib';
 use Test;
 
+plan 6;
+
 use CheckSocket;
 
 my $port = 50000;
