@@ -40,4 +40,4 @@ https://github.com/jonathanstowe/CheckSocket/issues
 
 Please see the LICENCE file in the distribution
 
-(C) Jonathan Stowe 2015, 2016, 2017
+© Jonathan Stowe 2015, 2016, 2017, 2019

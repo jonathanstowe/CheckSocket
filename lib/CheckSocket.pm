@@ -40,7 +40,7 @@ determine whether a particular network service is present to test against.
 
 =end pod
 
-module CheckSocket:ver<0.0.4>:auth<github:jonathanstowe> {
+module CheckSocket:ver<0.0.5>:auth<github:jonathanstowe>:api<1.0> {
     sub check-socket(Int $port, Str $host = "localhost" --> Bool ) is export {
         my Bool $rc = True;
         try {
