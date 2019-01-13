@@ -41,10 +41,10 @@ determine whether a particular network service is present to test against.
 =end pod
 
 module CheckSocket:ver<0.0.4>:auth<github:jonathanstowe> {
-    sub check-socket(Int $port, Str $host = "localhost") returns Bool is export {
+    sub check-socket(Int $port, Str $host = "localhost" --> Bool ) is export {
         my Bool $rc = True;
         try {
-            my $msock = IO::Socket::INET.new(host => $host, port => $port);
+            my $msock = IO::Socket::INET.new(:$host, :$port);
             CATCH {
                 default {
                     $rc = False;
