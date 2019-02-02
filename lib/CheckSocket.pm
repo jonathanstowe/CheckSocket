@@ -53,5 +53,14 @@ module CheckSocket:ver<0.0.5>:auth<github:jonathanstowe>:api<1.0> {
         }
         $rc;
     }
+
+    sub wait-socket( Int $port, Str $host = "localhost", Int $wait = 1, Int $tries = 3 --> Bool ) is export {
+        my Int $count = $tries;
+
+        while !check-socket($port, $host ) && $count-- {
+            sleep $wait
+        }
+        check-socket($port, $host);
+    }
 }
 # vim: expandtab shiftwidth=4 ft=perl6
