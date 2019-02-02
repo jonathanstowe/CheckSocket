@@ -50,7 +50,7 @@ test code and wait for it to be ready to use.
 
 =end pod
 
-module CheckSocket:ver<0.0.5>:auth<github:jonathanstowe>:api<1.0> {
+module CheckSocket:ver<0.0.6>:auth<github:jonathanstowe>:api<1.0> {
     sub check-socket(Int $port, Str $host = "localhost" --> Bool ) is export {
         my Bool $rc = True;
         try {
