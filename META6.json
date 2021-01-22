@@ -1,7 +1,8 @@
 {
   "name": "CheckSocket",
+  "description": "very simple Raku function to test if a TCP socket is listening on a given address",
   "auth": "github:jonathanstowe",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "api": "1.0",
   "source-url": "git://github.com/jonathanstowe/CheckSocket.git",
   "support": {
@@ -9,6 +10,7 @@
     "bugtracker": "https://github.com/jonathanstowe/CheckSocket/issues"
   },
   "perl": "6.*",
+  "raku": "6.*",
   "resources": [
   ],
   "build-depends": [
@@ -31,6 +33,5 @@
   "authors": [
     "Jonathan Stowe <jns+git@gellyfish.co.uk>"
   ],
-  "description": "very simple Perl 6 function to test if a TCP socket is listening on a given address",
-  "meta-version": "0"
+  "meta-version": "1"
 }

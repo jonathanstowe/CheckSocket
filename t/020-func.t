@@ -29,15 +29,20 @@ start {
     }
 }
 
+my ( $default-host, $name-host, $ip-host );
+
 my $p2 = $p.then({
-            ok(check-socket($port), "check-socket - port $port default localhost");
-            ok(check-socket($port, 'localhost'), "check-socket - port $port");
-            todo "this may fail if ipv6 is configured in a certain way";
-            ok(check-socket($port, '127.0.0.1'), "check-socket - port $port numeric IP");
-            exit 0;
+            $default-host = check-socket($port);
+            $name-host    = check-socket($port, 'localhost');
+            $ip-host      = check-socket($port, '127.0.0.1');
             True;
 });
 
 await $p2;
 
-# vim: expandtab shiftwidth=4 ft=perl6
+ok($default-host, "check-socket - port $port default localhost");
+ok($name-host, "check-socket - port $port");
+todo "this may fail if ipv6 is configured in a certain way";
+ok($ip-host, "check-socket - port $port numeric IP");
+
+# vim: expandtab shiftwidth=4 ft=raku

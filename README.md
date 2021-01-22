@@ -1,7 +1,6 @@
 # CheckSocket
 
-A very simple Perl 6 function to test if a TCP socket is listening on
-a given address.
+A very simple Raku function to test if a TCP socket is listening on a given address.
 
 ## Description
 
@@ -33,7 +32,7 @@ dependency on an external network service.  For example:
 
 ## Installation
 
-You can install directly with "zef":
+You can install directly with *zef*:
 
     # From the source directory
    
@@ -53,4 +52,4 @@ https://github.com/jonathanstowe/CheckSocket/issues
 
 Please see the LICENCE file in the distribution
 
-© Jonathan Stowe 2015, 2016, 2017, 2019
+© Jonathan Stowe 2015 - 2021

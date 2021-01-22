@@ -29,7 +29,7 @@ something is listening on the specified TCP port:
 
 =head2 check-socket
 
-    sub check-socket(Int $port, Str $host = "localhost" --> Bool ) 
+    sub check-socket(Int $port, Str $host = "localhost" --> Bool )
 
 This attempts to connect to the socket specified by $port and $host and
 if succesfull will return C<True> otherwise it will catch any exception
@@ -43,14 +43,14 @@ determine whether a particular network service is present to test against.
     sub wait-socket( Int $port, Str $host = "localhost", Int $wait = 1, Int $tries = 3 --> Bool )
 
 This attempts to connects to the socket specified by $port and $host
-retrying a maximum of $tires times every $wait second and then returning
+retrying a maximum of $tries times every $wait second and then returning
 a Bool to indicate whether the server is available as C<check-socket>.
 This may be useful when you want to start a server asynchronously in some
 test code and wait for it to be ready to use.
 
 =end pod
 
-module CheckSocket:ver<0.0.6>:auth<github:jonathanstowe>:api<1.0> {
+module CheckSocket:ver<0.0.7>:auth<github:jonathanstowe>:api<1.0> {
     sub check-socket(Int $port, Str $host = "localhost" --> Bool ) is export {
         my Bool $rc = True;
         try {
@@ -73,4 +73,4 @@ module CheckSocket:ver<0.0.6>:auth<github:jonathanstowe>:api<1.0> {
         check-socket($port, $host);
     }
 }
-# vim: expandtab shiftwidth=4 ft=perl6
+# vim: expandtab shiftwidth=4 ft=raku
