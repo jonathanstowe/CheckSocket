@@ -1,5 +1,7 @@
 # CheckSocket
 
+![Build Status](https://github.com/jonathanstowe/CheckSocket/workflows/CI/badge.svg)
+
 A very simple Raku function to test if a TCP socket is listening on a given address.
 
 ## Description
