@@ -1,8 +1,8 @@
 {
   "name": "CheckSocket",
-  "description": "very simple Raku function to test if a TCP socket is listening on a given address",
+  "description": "very simple Raku function to test if a TCP or UNIX domain socket is listening on a given address",
   "auth": "github:jonathanstowe",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "api": "1.0",
   "source-url": "git://github.com/jonathanstowe/CheckSocket.git",
   "support": {

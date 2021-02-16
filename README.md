@@ -2,14 +2,16 @@
 
 ![Build Status](https://github.com/jonathanstowe/CheckSocket/workflows/CI/badge.svg)
 
-A very simple Raku function to test if a TCP socket is listening on a given address.
+A very simple Raku function to test if a TCP socket is listening on a given address or
+a UNIX domain socket on the specified path
 
 ## Description
 
 This module provides a very simple mechanism to determine whether
-something is listening on a TCP socket at the given port and address.
-This is primarly for the convenience of testing where there may be a
-dependency on an external network service.  For example:
+something is listening on a TCP socket at the given port and address,
+or UNIX domain socket at a specified path.  This is primarly for the
+convenience of testing where there may be a dependency on an external
+network service.  For example:
 
      use Test;
      use CheckSocket;
