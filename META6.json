@@ -1,37 +1,36 @@
 {
-  "name": "CheckSocket",
-  "description": "very simple Raku function to test if a TCP or UNIX domain socket is listening on a given address",
-  "auth": "github:jonathanstowe",
-  "version": "0.0.8",
+  "depends": [
+  ],
+  "raku": "6.*",
+  "resources": [
+  ],
+  "author": "Jonathan Stowe <jns+git@gellyfish.co.uk>",
+  "license": "Artistic-2.0",
   "api": "1.0",
-  "source-url": "git://github.com/jonathanstowe/CheckSocket.git",
+  "authors": [
+    "Jonathan Stowe <jns+git@gellyfish.co.uk>"
+  ],
   "support": {
     "source": "git://github.com/jonathanstowe/CheckSocket.git",
     "bugtracker": "https://github.com/jonathanstowe/CheckSocket/issues"
   },
-  "perl": "6.*",
-  "raku": "6.*",
-  "resources": [
+  "name": "CheckSocket",
+  "meta-version": "1",
+  "test-depends": [
+    "Test"
   ],
-  "build-depends": [
-  ],
-  "author": "Jonathan Stowe <jns+git@gellyfish.co.uk>",
-  "depends": [
-  ],
+  "auth": "zef:jonathanstowe",
+  "source-url": "git://github.com/jonathanstowe/CheckSocket.git",
+  "description": "very simple Raku function to test if a TCP or UNIX domain socket is listening on a given address",
   "tags": [
     "network",
     "utils",
     "test"
   ],
-  "license": "Artistic-2.0",
-  "test-depends": [
-    "Test"
+  "version": "0.0.9",
+  "build-depends": [
   ],
   "provides": {
     "CheckSocket": "lib/CheckSocket.pm"
-  },
-  "authors": [
-    "Jonathan Stowe <jns+git@gellyfish.co.uk>"
-  ],
-  "meta-version": "1"
+  }
 }
