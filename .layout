@@ -28,7 +28,7 @@
       "children": [
         {
           "type": "file",
-          "name": "CheckSocket.pm"
+          "name": "CheckSocket.rakumod"
         }
       ],
       "name": "lib",

@@ -27,10 +27,10 @@
     "utils",
     "test"
   ],
-  "version": "0.0.9",
+  "version": "0.0.10",
   "build-depends": [
   ],
   "provides": {
-    "CheckSocket": "lib/CheckSocket.pm"
+    "CheckSocket": "lib/CheckSocket.rakumod"
   }
 }
